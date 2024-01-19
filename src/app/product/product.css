@@ -1,0 +1,48 @@
+
+
+#mainProduct{
+    width: 100%;
+    max-width: 1000px;
+
+}
+
+#products{
+    padding: 50px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+#products a{
+    text-decoration: none;
+    color: var(--color-wight);
+    background-color: var(--cand3);
+    width: 200px;
+    position: relative;
+    overflow: hidden;
+}
+#products a .text{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    padding: 5px 5px 0px 10px;
+}
+
+
+#products a:nth-child(odd){
+    background-color: var(--dand2);
+}
+
+#products a .text .dis{
+    position: absolute;
+    top: 12px;
+    left: -40px;
+    background-color: rgb(150, 2, 2);
+    color: #fff;
+    font-weight: 900;
+    padding: 0px 40px;
+    transform: rotate(-45deg);
+    font-size: 12px;
+}
+

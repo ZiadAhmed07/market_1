@@ -1,0 +1,68 @@
+
+#navbar{
+    width: 100%;
+    max-width: 1000px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+#navbar h1{
+    color: var(--color-main);
+    font-size: 30px;
+}
+
+#navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+ 
+#navbar ul li{
+    list-style: none;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    color: var(--color-wight);
+}
+
+#navbar ul li label {
+    width: 40px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: #ccc;
+    display: inline-block;
+    cursor: pointer;
+    border: solid 1px var(--color-main);
+}
+
+
+
+#navbar ul li label div{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: var(--color-main);
+    transition: 0.5s;
+    position: absolute;
+    transform: translate(1px , -24px);
+}
+
+#navbar ul li label input{
+    opacity: 0;
+}
+
+#navbar ul li label input:checked ~ div{
+    transform: translate(19px , -24px);
+    background-color: #555;
+}
+ 
+#navbar ul li button {
+    background-color: var(--color-main);
+    padding: 0px 15px;
+    border-radius: 5px;
+}
